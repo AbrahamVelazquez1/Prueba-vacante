@@ -65,6 +65,7 @@ public class PostController : Controller
         return View(post);
     }
 
+    [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(int id, Post post)
     {
