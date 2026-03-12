@@ -1,7 +1,15 @@
+using prueba_vacante.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddHttpClient<IPostService, PostService>(client =>
+{
+    client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/");
+    client.Timeout = TimeSpan.FromSeconds(30);
+});
 
 var app = builder.Build();
 

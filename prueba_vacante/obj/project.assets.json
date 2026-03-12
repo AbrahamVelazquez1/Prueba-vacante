@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anton\\Desktop\\Prueba-vacante\\prueba_vacante\\prueba_vacante.csproj",
+      "projectUniqueName": "C:\\Users\\anton\\Desktop\\prueba_vacante\\prueba_vacante\\prueba_vacante.csproj",
       "projectName": "prueba_vacante",
-      "projectPath": "C:\\Users\\anton\\Desktop\\Prueba-vacante\\prueba_vacante\\prueba_vacante.csproj",
+      "projectPath": "C:\\Users\\anton\\Desktop\\prueba_vacante\\prueba_vacante\\prueba_vacante.csproj",
       "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anton\\Desktop\\Prueba-vacante\\prueba_vacante\\obj\\",
+      "outputPath": "C:\\Users\\anton\\Desktop\\prueba_vacante\\prueba_vacante\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config"
