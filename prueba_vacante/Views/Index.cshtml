@@ -1,0 +1,46 @@
+@model IEnumerable<prueba_vacante.Models.Post>
+
+@{
+    ViewData["Title"] = "Posts - JSONPlaceholder";
+}
+
+<h1>Posts (de JSONPlaceholder)</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear nuevo post</a>
+</p>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>User ID</th>
+            <th>Título</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.UserId</td>
+                <td>@item.Title</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Ver</a> |
+                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
